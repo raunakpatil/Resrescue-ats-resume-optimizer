@@ -4,6 +4,21 @@ Welcome to **Raunak's ResRescue**, a next-generation desktop application designe
 
 ![Raunak's ResRescue UI](src/assets/wide-logo.png)
 
+## 📸 Application Showcase
+
+Experience the seamless 5-step optimization workflow wrapped in a liquid-glass aesthetic:
+
+| Step 1: Secure API Key | Step 2: Upload Details |
+| :---: | :---: |
+| <img src="screenshots/step1.png" alt="Step 1 - API Key" width="100%"> | <img src="screenshots/step2.png" alt="Step 2 - Inputs" width="100%"> |
+
+| Step 3: Choose Template | Step 4: AI Processing |
+| :---: | :---: |
+| <img src="screenshots/step3.png" alt="Step 3 - Templates" width="100%"> | <img src="screenshots/step4.png" alt="Step 4 - Processing" width="100%"> |
+
+### Step 5: Optimization Results & Instant Export
+<img src="screenshots/step5.png" alt="Step 5 - Results" width="100%">
+
 ## ✨ Core Features
 
 *   **📊 Deep ATS Analysis**: Get a brutal, honest ATS score out of 100. Uncover hidden requirements, identify "hard gaps" vs "soft gaps", and see exactly which Tier-1 keywords your resume is missing.
