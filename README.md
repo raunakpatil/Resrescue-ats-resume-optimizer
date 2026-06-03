@@ -82,6 +82,10 @@ ResRescue is built around Apple's latest Human Interface Design principles, spec
 
 Contributions, issues, and feature requests are always welcome! Feel free to check the issues page or submit a Pull Request.
 
+## 🙏 Acknowledgements
+
+A special thanks to [Mekhala Saxena](https://github.com/MekhalaSaxena97) for her extensive Testing and Quality Assurance!
+
 ## 📝 License
 
 This project is open-source and free to use. 
