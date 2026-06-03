@@ -14,6 +14,25 @@ Welcome to **Raunak's ResRescue**, a next-generation desktop application designe
 *   **🎯 Interview Prep**: Prepare for the battle. Generates behavioral, technical, and situational interview questions based specifically on your newly optimized resume.
 *   **🗄️ Local History & Privacy**: Your data stays yours. Past optimizations and PDFs are saved directly to your local machine for easy access and re-downloading.
 
+## 🏗️ How It Works
+
+The optimization pipeline runs 6 specialized AI agents sequentially to rebuild your resume and outreach strategy:
+
+```text
+Upload PDF ──► ATS Audit ──► Gap Analysis ──► Experience Rewrite ──► Template Engine ──► PDF / DOCX
+                                  │
+                                  └──► Project Suggestions & Recruiter Outreach
+```
+
+| Phase | Agent / Module | What it does |
+|---|---|---|
+| **1 · Parse & Audit** | `atsScorer.js` | Parses the uploaded PDF, extracts current text, and brutally scores it against the Job Description. |
+| **2 · Gap Analysis** | `gapAnalyzer.js` | Identifies missing Tier-1 keywords, "hard gaps" (missing skills), and "soft gaps" (poorly framed skills). |
+| **3 · Rewrite** | `experienceRewriter.js` | Reframes existing bullet points to naturally integrate missing keywords without fabricating data. |
+| **4 · Suggestions** | `projectSuggestions.js` | Acts as a Senior Tech Lead to suggest 3 high-impact portfolio projects to bridge your "hard gaps". |
+| **5 · Outreach** | `coverLetterAgent.js` | Generates a tailored cover letter and a punchy, targeted cold email for the hiring manager. |
+| **6 · Export** | `pdfGenerator.js` | Injects the optimized data into React-PDF templates to instantly render pixel-perfect resumes locally. |
+
 ## 🛠️ Technology Stack
 
 *   **Frontend UI**: React 18, Vite, TailwindCSS (v3)
