@@ -91,4 +91,7 @@ A special thanks to [Mekhala Saxena](https://github.com/MekhalaSaxena97) for her
 This project is open-source and free to use. 
 
 ---
-*Built with ❤️ by Raunak Patil.*
+
+<div align="center">
+  <em>built with ❤️ by <a href="https://github.com/raunakpatil">raunakpatil</a></em>
+</div>
