@@ -1,0 +1,22 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# Vite/Electron build output
+dist/
+release/
+build/
+out/
+.vite/
+
+# OS metadata
+.DS_Store
+Thumbs.db

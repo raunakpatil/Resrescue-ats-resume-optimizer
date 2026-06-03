@@ -1,0 +1,24 @@
+
+[3592:0603/034303.323:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.323:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 1 time(s)
+Renderer process crashed - see https://www.electronjs.org/docs/tutorial/application-debugging for potential debugging information.
+[3592:0603/034303.338:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.338:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 2 time(s)
+[3592:0603/034303.345:INFO:electron_api_web_frame_main.cc(209)] Attempt to setup WebFrameMain connection while render frame is disposed
+[3592:0603/034303.349:WARNING:backend_impl.cc(1759)] Destroying invalid entry.
+[3592:0603/034303.351:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.351:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 3 time(s)
+Renderer process crashed - see https://www.electronjs.org/docs/tutorial/application-debugging for potential debugging information.
+[3592:0603/034303.377:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.377:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 4 time(s)
+[3592:0603/034303.390:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.390:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 5 time(s)
+[3592:0603/034303.402:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.402:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 6 time(s)
+[3592:0603/034303.414:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.414:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 7 time(s)
+[3592:0603/034303.426:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.426:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 8 time(s)
+[3592:0603/034303.438:ERROR:gpu_process_host.cc(997)] GPU process exited unexpectedly: exit_code=-1073741515
+[3592:0603/034303.438:WARNING:gpu_process_host.cc(1431)] The GPU process has crashed 9 time(s)
+[3592:0603/034303.438:FATAL:gpu_data_manager_impl_private.cc(448)] GPU process isn't usable. Goodbye.
