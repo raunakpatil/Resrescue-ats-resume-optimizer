@@ -6,6 +6,7 @@ const initialState = {
   currentStep: 1,
   apiKey: "",
   jobDescription: "",
+  jobUrl: "",
   resumeText: "",
   selectedTemplate: "classic",
   optimizationMode: "god", // "god" | "pro"
@@ -21,6 +22,8 @@ function appReducer(state, action) {
       return { ...state, apiKey: action.payload };
     case "SET_JD":
       return { ...state, jobDescription: action.payload };
+    case "SET_JOB_URL":
+      return { ...state, jobUrl: action.payload };
     case "SET_RESUME":
       return { ...state, resumeText: action.payload };
     case "SET_TEMPLATE":
@@ -54,6 +57,7 @@ function appReducer(state, action) {
       return {
         ...state,
         jobDescription: "",
+        jobUrl: "",
         pipelineResult: null,
         currentStep: 2, // Go back to inputs
       };
@@ -106,6 +110,7 @@ export function AppProvider({ children }) {
     try { localStorage.setItem("ats_api_key", key); } catch {}
   };
   const setJD = (jd) => dispatch({ type: "SET_JD", payload: jd });
+  const setJobUrl = (url) => dispatch({ type: "SET_JOB_URL", payload: url });
   const setResume = (r) => dispatch({ type: "SET_RESUME", payload: r });
   const setTemplate = (t) => dispatch({ type: "SET_TEMPLATE", payload: t });
   const setOptimizationMode = (m) => dispatch({ type: "SET_MODE", payload: m });
@@ -134,6 +139,7 @@ export function AppProvider({ children }) {
         setStep,
         setApiKey,
         setJD,
+        setJobUrl,
         setResume,
         setTemplate,
         setOptimizationMode,

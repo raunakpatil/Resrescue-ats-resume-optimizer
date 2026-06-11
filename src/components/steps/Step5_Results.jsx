@@ -13,7 +13,7 @@ import { TEMPLATES } from "../../utils/constants";
 import { getScoreConfig } from "../../utils/constants";
 import { GlassCard } from "../ui/glass/GlassCard";
 import { GlassButton } from "../ui/glass/GlassButton";
-import { FileText, BarChart3, ArrowLeftRight, Mail, Lightbulb, MessageSquare, Target, Download, FileType, Copy, RefreshCw, Sparkles, PlusCircle, Archive, Trash2 } from "lucide-react";
+import { FileText, BarChart3, ArrowLeftRight, Mail, Lightbulb, MessageSquare, Target, Download, FileType, Copy, RefreshCw, Sparkles, PlusCircle, Archive, Trash2, ExternalLink } from "lucide-react";
 import { toast } from "sonner";
 
 // Lazy load template components and PDFViewer
@@ -736,7 +736,7 @@ function ResumeHistoryTab() {
 }
 
 export function Step5_Results() {
-  const { pipelineResult, selectedTemplate, optimizationMode, setStep, reset, resetForNewJD } = useApp();
+  const { pipelineResult, jobUrl, selectedTemplate, optimizationMode, setStep, reset, resetForNewJD } = useApp();
   const [activeTab, setActiveTab] = useState("resume");
   const [isDownloading, setIsDownloading] = useState(false);
   const [isDownloadingDocx, setIsDownloadingDocx] = useState(false);
@@ -841,7 +841,17 @@ export function Step5_Results() {
             )}
           </p>
         </div>
-        <div className="flex gap-3">
+        <div className="flex flex-wrap gap-3">
+          {jobUrl && (
+            <GlassButton
+              variant="primary"
+              onClick={() => window.open(jobUrl, "_blank", "noopener,noreferrer")}
+              className="bg-purple-600 hover:bg-purple-500 text-white border-purple-500/50 shadow-[0_0_15px_rgba(147,51,234,0.3)]"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Apply Now
+            </GlassButton>
+          )}
           <GlassButton
             variant="secondary"
             onClick={resetForNewJD}

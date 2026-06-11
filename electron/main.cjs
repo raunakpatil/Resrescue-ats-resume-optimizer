@@ -88,6 +88,38 @@ ipcMain.handle('save-pdf-to-disk', async (event, { buffer, filename }) => {
   }
 });
 
+// IPC handler for Python JobSpy
+ipcMain.handle('scrape-jobs', async (event, config) => {
+  return new Promise((resolve, reject) => {
+    const executablePath = app.isPackaged 
+      ? path.join(process.resourcesPath, 'bin', 'scraper.exe')
+      : path.join(__dirname, '..', 'bin', 'scraper.exe');
+
+    const { execFile } = require('child_process');
+    execFile(executablePath, [JSON.stringify(config)], { maxBuffer: 10 * 1024 * 1024 }, (error, stdout, stderr) => {
+      if (error) {
+        console.error('Scraper error:', error, stderr);
+        try {
+          const parsed = JSON.parse(stdout);
+          if (parsed && parsed.error) return reject(new Error(parsed.error));
+        } catch (e) {}
+        return reject(new Error(`Failed to run scraper: ${stderr || error.message}`));
+      }
+      try {
+        const parsed = JSON.parse(stdout);
+        if (parsed.error) {
+          reject(new Error(parsed.error));
+        } else {
+          resolve(parsed.jobs || []);
+        }
+      } catch (err) {
+        console.error("Failed to parse stdout:", stdout);
+        reject(new Error("Invalid response from scraper"));
+      }
+    });
+  });
+});
+
 let mainWindow = null;
 
 function createWindow() {

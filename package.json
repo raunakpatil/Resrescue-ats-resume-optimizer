@@ -1,7 +1,7 @@
 {
   "name": "raunaks-resrescue",
   "private": true,
-  "version": "1.7.6",
+  "version": "1.8.0",
   "description": "Free AI-powered ATS Resume Optimizer using Google Gemini",
   "type": "module",
   "main": "electron/main.cjs",
@@ -49,7 +49,15 @@
       "electron/**/*",
       "build/icon.png"
     ],
-    "extraResources": [],
+    "extraResources": [
+      {
+        "from": "bin",
+        "to": "bin",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
     "asar": true,
     "win": {
       "target": [

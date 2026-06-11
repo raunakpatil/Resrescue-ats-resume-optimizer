@@ -20,3 +20,7 @@ out/
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Python scraper build output
+bin/
+build_py/

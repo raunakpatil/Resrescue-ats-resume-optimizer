@@ -4,6 +4,7 @@ const { contextBridge, ipcRenderer } = require('electron')
 contextBridge.exposeInMainWorld('electronAPI', {
   platform: process.platform,
   parsePdf: (buffer) => ipcRenderer.invoke('parse-pdf', buffer),
+  scrapeJobs: (config) => ipcRenderer.invoke('scrape-jobs', config),
   
   // Theme APIs
   getTheme: () => ipcRenderer.invoke('theme:get'),
