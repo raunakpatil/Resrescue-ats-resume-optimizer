@@ -4,15 +4,12 @@
 ![Build Status](https://img.shields.io/github/actions/workflow/status/raunakpatil/Resrescue-ats-resume-optimizer/ci.yml)
 ![Version](https://img.shields.io/github/package-json/v/raunakpatil/Resrescue-ats-resume-optimizer)
 ![Node Version](https://img.shields.io/badge/node-18%2B-brightgreen.svg)
+
 Welcome to **Raunak's ResRescue**, a next-generation desktop application designed to beat Applicant Tracking Systems (ATS) and help you land interviews. Built with a stunning liquid-glass user interface, this tool leverages the power of the Google Gemini API to analyze, restructure, and supercharge your resume against any target Job Description (JD).
 
 ![Raunak's ResRescue UI](src/assets/wide-logo.png)
 
 ## 📸 Application Showcase
-
-> [!TIP]
-> **Demo Video Coming Soon!** 
-> *Imagine a 15-second fluid GIF here showing the exact workflow from upload to optimized PDF download.*
 
 Experience the seamless 5-step optimization workflow wrapped in a liquid-glass aesthetic:
 
