@@ -148,5 +148,5 @@ export function getScoreConfig(score) {
 }
 
 export const MAX_INPUT_LENGTH = 15000;
-export const MIN_JD_LENGTH = 100;
+export const MIN_JD_LENGTH = 50;
 export const MIN_RESUME_LENGTH = 200;

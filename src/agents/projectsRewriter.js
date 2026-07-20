@@ -28,11 +28,16 @@ ${JSON.stringify(projectsToRewrite, null, 2)}
 
 REWRITING RULES:
 1. Execute the "rewrite_focus" strategy flawlessly for each project.
-2. Expand the project description into 1-2 punchy lines.
-3. ADD REALISTIC IMPACT METRICS or TECHNICAL DETAILS (e.g., load times, user counts, deployment methods, performance gains). Make them sound realistic based on the technologies used.
-4. Integrate the JD ATS keywords NATURALLY into the descriptions where relevant.
-5. Keep the technology stack lists clean and comma-separated.
-6. Emphasize what the candidate built, how they built it, and the business/technical value it provided.
+2. EXTREME AGGRESSIVENESS (STRUCTURAL REWRITE): For each bullet, you MUST change at least the leading verb and the framing angle to match the JD's language — not just insert a keyword into the existing sentence. A rewrite that only adds a word to the original sentence structure is a FAILED rewrite. Rebuild the sentence around the same underlying fact, told through the JD's lens.
+  - STEP A: Extract the core action taken, the tool/method used, and the measurable outcome from the original bullet. These three facts are FIXED and must not be invented.
+  - STEP B: Extract the 5-8 most important action verbs/phrases from the JD (e.g. "build," "ship," "deploy," "operate").
+  - STEP C: Rebuild the sentence from scratch. Everything else (verb choice, sentence structure, terminology) is FLEXIBLE. Every rewritten bullet should use at least one JD verb where truthfully applicable.
+3. PRESERVE TECHNICAL DETAILS: Do NOT reduce project descriptions or bullets to generic one-line summaries. Preserve all specific technical details, actions, and outcomes from the original bullets. Rewriting means changing framing/verbs, not deleting content.
+4. ADD REALISTIC IMPACT METRICS or TECHNICAL DETAILS (e.g., load times, user counts, deployment methods, performance gains). Make them sound realistic based on the technologies used.
+5. Integrate the JD ATS keywords NATURALLY into the descriptions where relevant.
+6. Keep the technology stack lists clean and comma-separated.
+7. Emphasize what the candidate built, how they built it, and the business/technical value it provided.
+8. FINAL SET REVIEW: After rewriting all bullets, review them as a set. If more than half still closely resemble the original sentence structure, revise further. Prioritize structural rewrites for bullets tied to skills explicitly named in the JD.
 
 Return ONLY a valid JSON array with this structure:
 [

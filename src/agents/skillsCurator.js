@@ -20,7 +20,7 @@ SKILLS STRATEGY:
 
 RULES:
 1. REBUILD INTO EXACTLY 3 CATEGORIES mirroring the JD's structure: "Technical" (platforms/tools/languages), "Domain" (industry-specific knowledge), and "Functional" (competencies).
-2. HONEST HARD GAP BRIDGING: For every "HARD GAP", you MUST add it to the appropriate category WITH a qualifier in brackets, e.g., "Palantir Foundry (active upskilling)", "AWS (adjacent experience)", or "(certified)". This allows the ATS to parse it without lying to a human recruiter.
+2. NEVER CLAIM UNUSED TOOLS: If the candidate has a "HARD GAP" for a specific named tool/technology they haven't used, DO NOT add it to the skills list. You may only align terminology for underlying concepts they already know (e.g. mapping "vector databases" to "RAG" if the JD requires it).
 3. REMOVE GENERIC DILUTION: Remove anything not in the JD's universe (e.g., Microsoft Word, generic soft skills). Every skill listed must earn its place.
 4. ORDER matters for ATS: Put JD-required skills FIRST within each category.
 5. NO MORE THAN 6-8 ITEMS per category to maintain high signal-to-noise ratio.

@@ -1,5 +1,6 @@
 import { useState, lazy, Suspense, useEffect, useRef } from "react";
 import { pdf } from "@react-pdf/renderer";
+import { downloadCoverLetterPDF } from "../../utils/pdfGenerator";
 import { useApp } from "../../context/AppContext";
 import { ATSScoreRing } from "../ui/ATSScoreRing";
 import { KeywordChips } from "../ui/KeywordChips";
@@ -404,9 +405,13 @@ function CoverLetterTab({ result, onDownloadCoverLetter }) {
     }
   };
 
-  const handleDownload = () => {
-    downloadTextFile(letterText, "Cover_Letter.txt");
-    toast.success("Cover letter downloaded!");
+  const handleDownload = async () => {
+    try {
+      await downloadCoverLetterPDF(letterText, "Cover_Letter.pdf");
+      toast.success("Cover letter downloaded as PDF!");
+    } catch (err) {
+      toast.error("Failed to generate PDF");
+    }
   };
 
   if (!result?.coverLetter) {

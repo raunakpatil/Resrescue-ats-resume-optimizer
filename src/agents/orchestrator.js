@@ -205,11 +205,13 @@ function assembleResume(result, optimizationMode) {
     throw new Error("No parsed resume data available to assemble");
   }
 
-  // Build experience array with optimized bullets merged in
+  // Build experience array with optimized bullets and titles merged in
   const experienceMap = {};
+  const titleMap = {};
   (optimizedExperience || []).forEach((e) => {
-    if (e.exp_id && e.optimized_bullets) {
-      experienceMap[e.exp_id] = e.optimized_bullets;
+    if (e.exp_id) {
+      if (e.optimized_bullets) experienceMap[e.exp_id] = e.optimized_bullets;
+      if (e.optimized_title) titleMap[e.exp_id] = e.optimized_title;
     }
   });
 
@@ -223,10 +225,12 @@ function assembleResume(result, optimizationMode) {
   const optimizedExperienceArray = (parsedResume.experience || []).map((exp, i) => {
     const expId = exp.id || `exp_${i + 1}`;
     let expTitle = exp.title || "";
-    // Aggressive Job Title alignment on the most recent job
-    if (optimizationMode === "god" && i === 0 && targetTitle && !expTitle.toLowerCase().includes(targetTitle.toLowerCase())) {
-      expTitle = `${expTitle} (${targetTitle})`;
+    
+    // Apply AI-optimized title if available and in god mode
+    if (optimizationMode === "god" && titleMap[expId]) {
+      expTitle = titleMap[expId];
     }
+    
     return {
       ...exp,
       title: expTitle,

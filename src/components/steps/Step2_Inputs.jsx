@@ -68,9 +68,18 @@ export function Step2_Inputs() {
   };
 
   const handleSelectJob = (job) => {
-    setJD(job.description);
     if (job.url) setJobUrl(job.url);
-    toast.success("Job selected! Don't forget to upload your resume.");
+    
+    if (!job.description || job.description.trim().length < MIN_JD_LENGTH) {
+      setJD(job.description || "");
+      toast.warning("Job description was hidden. Please click the link to open the job, copy the description, and paste it here manually.", { duration: 6000 });
+      if (job.url) window.open(job.url, "_blank", "noopener,noreferrer");
+      setPath("manual");
+    } else {
+      setJD(job.description);
+      toast.success("Job selected! Don't forget to upload your resume.");
+      setPath("manual");
+    }
   };
 
   const handleUseSample = () => {

@@ -12,18 +12,18 @@ PROJECTS CRITERIA:
 - Be realistic to build within a few weeks, but impressive enough to stand out (e.g., avoid generic "Todo apps").
 
 EMAIL CRITERIA:
-- CLEAR ASK: Have a "foot in the door" ask. Do NOT directly ask for a role. Ask for a quick 10-15 minute chat to learn more, or a 10 minute review of work to see alignment. End with "A simple yes/no works perfectly."
-- SHOW VALUE: Focus heavily on what the candidate can do for the company to directly solve a pain point. 
-- RESEARCH/INSIGHTS: Mention that you have researched the company, identified a specific pain point (extrapolate a likely pain point from the JD), and mention you have attached a slide deck or have a few insights on how you can help solve it.
-- Keep it short, punchy, and highly actionable.
+- FOLLOW INSTRUCTIONS: If the JD lists explicit "how to apply" instructions, answer them directly and in order.
+- CONCRETE NEXT STEP: Keep it short, punchy, and highly actionable. End with a concrete, specific next step tied to the JD's actual ask (e.g., submitting a portfolio, discussing a specific project). 
+- NO SALES TACTICS: AVOID cold-sales phrasing like "quick 10-min chat" or "simple yes/no works". This is a job application, not a sales outreach. Do NOT use vague phrases like "let's connect".
+- SHOW VALUE: Focus heavily on what the candidate can do for the company to directly solve a pain point. Mention that you have researched the company and have insights on how you can help.
+- SAFE FALLBACKS: Never leave placeholder text like [Name] or [Company] unresolved. If you do not have the real value, use a safe generic fallback (e.g. "Hiring Manager" or "Your Team").
 
 Example format for the email:
-"Hi [Name],
-I came across your [Job Title] opening at [Company] and wanted to reach out because my background aligns quite closely with the [Core Skill 1] and [Core Skill 2] requirements in the role.
-I've attached my CV. Most recently, I worked on [Achievement related to pain point] that [Quantifiable Result]. I also noticed [Company] might be focusing on [Pain Point], and I've put together a short slide deck with a few insights on how I could help solve that.
+"Hi Hiring Manager,
+I came across your [Job Title] opening at your company and wanted to reach out because my background aligns quite closely with the [Core Skill 1] and [Core Skill 2] requirements in the role.
+I've attached my CV. Most recently, I worked on [Achievement related to pain point] that [Quantifiable Result]. I also noticed your team might be focusing on [Pain Point], and I've put together a short slide deck with a few insights on how I could help solve that.
 
-Would you be open to a quick 10-minute conversation this week to see if there could be a fit?
-A simple yes/no works perfectly.
+I would love to share this deck with you if you are open to reviewing it as part of my application.
 Thanks,
 [Candidate Name]"
 

@@ -22,7 +22,9 @@ ${(jdAnalysis.required_skills || []).join(", ")}
 
 CRITICAL RULES:
 Use the following strict structural framework to generate the cover letter. 
-Length MUST be very short: 150–220 words max. Keep it incredibly punchy. Hiring managers are busy.
+Length MUST be very short: under 250 words. Keep it incredibly punchy. Hiring managers are busy.
+If the JD lists explicit "how to apply" instructions or specific questions to answer, YOU MUST answer them directly and in order. Do not write a generic letter that ignores them.
+Never leave placeholder text like [Name] or [Company] unresolved. If you do not have the real value, use a safe generic fallback (e.g. "Hiring Manager" or "Your Team").
 
 ### HEADER BLOCK (Include exactly this format at the top):
 ${finalResume?.contact?.name || "[First Name Last Name]"}
@@ -46,7 +48,7 @@ Start by genuinely expressing excitement about the role. Do NOT use corporate ja
 Do NOT just rehash the resume or list bullet points of metrics—they can already read the resume. Instead, tell a very brief (2-3 sentences), engaging story about *how* the candidate approaches solving hard problems, learning new things fast, or their attitude toward work. Draw inspiration from their past experience but frame it as a story of growth or determination. Show hunger, curiosity, and technical agility. Relate this directly to a core requirement of the target job.
 
 **Paragraph 3 (The Ask)**
-Keep it humble but confident. Don't be overly formal. Just express that you would love the opportunity to prove what you can do and ask for a quick chat.
+Keep it humble but confident. End with a concrete, specific next step tied to the JD's actual ask (e.g., submitting a portfolio, discussing a specific project). Do NOT use vague phrases like "let's connect" and strictly AVOID cold-sales phrasing like "quick 10-min chat" or "simple yes/no works" — this is a job application, not a sales outreach email.
 
 ### WRITING STYLE & ANTI-BUZZWORD CONSTRAINTS:
 1. **TONE:** Young, ambitious, conversational, yet professional. Write it as if sending a thoughtful message directly to a respected senior engineer or manager. 

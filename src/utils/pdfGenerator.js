@@ -31,3 +31,23 @@ export async function getPDFBlob(resumeData, TemplateComponent) {
   const element = React.createElement(TemplateComponent, { resumeData });
   return await pdf(element).toBlob();
 }
+
+export async function downloadCoverLetterPDF(text, filename = "Cover_Letter.pdf") {
+  try {
+    const TemplateCoverLetter = (await import("../templates/TemplateCoverLetter")).default;
+    const element = React.createElement(TemplateCoverLetter, { text });
+    const blob = await pdf(element).toBlob();
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = filename;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    return true;
+  } catch (err) {
+    console.error("Cover Letter PDF generation error:", err);
+    throw new Error("Failed to generate PDF. Please try again.");
+  }
+}

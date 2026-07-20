@@ -74,7 +74,7 @@ CRITICAL RULES:
 - Never suggest adding skills the candidate has zero evidence of having
 - Focus on re-framing and amplifying existing experience, not fabricating it
 - Every rewrite must be based on the candidate's actual history
-- For "project_strategy", evaluate both the Resume Projects and the GitHub Repos. Select the TOP 2 most impressive and relevant projects overall. If a GitHub repo is far more relevant to the Job Description than a listed resume project, swap it in! Provide detailed instructions in "rewrite_focus" for how to frame it.
+- For "project_strategy", you MUST include a strategy for EVERY SINGLE PROJECT listed in the original resume. Do NOT drop or omit any project from the original resume. If a project seems less relevant to the JD, it should still be included, just described more concisely. You may also suggest swapping in a highly relevant GitHub project, but you must not delete original projects entirely.
 - If there's a significant skills gap, note it but focus on transferable skills
 - CRITICAL KEYWORD RETENTION: NEVER suggest removing a skill or cutting a bullet if it contains a technical term, tool, or keyword. Jobscan penalizes removing skills. Retain all original keywords.`;
 
