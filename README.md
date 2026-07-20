@@ -1,4 +1,4 @@
-# 🚀 Raunak's ResRescue (ATS Resume Optimizer) v1.8.0
+# 🚀 Raunak's ResRescue (ATS Resume Optimizer) v1.8.3
 
 Welcome to **Raunak's ResRescue**, a next-generation desktop application designed to beat Applicant Tracking Systems (ATS) and help you land interviews. Built with a stunning liquid-glass user interface, this tool leverages the power of the Google Gemini API to analyze, restructure, and supercharge your resume against any target Job Description (JD).
 
@@ -23,9 +23,11 @@ Experience the seamless 5-step optimization workflow wrapped in a liquid-glass a
 
 *   **🕵️‍♂️ JobSpy Auto-Search**: Don't have a specific JD yet? Use the built-in JobSpy web scraper to find highly-relevant, remote-only, or easy-apply jobs directly from LinkedIn, Indeed, Glassdoor, and ZipRecruiter from within the app.
 *   **📊 Deep ATS Analysis**: Get a brutal, honest ATS score out of 100. Uncover hidden requirements, identify "hard gaps" vs "soft gaps", and see exactly which Tier-1 keywords your resume is missing.
-*   **🔄 AI-Powered Resume Rewrite**: Automatically rewrite your bullet points to match the JD's exact phrasing without fabricating experience. Includes a side-by-side "Before & After" diff viewer.
+*   **🔄 AI-Powered Resume Rewrite**: Automatically rewrite your bullet points to match the JD's exact phrasing. Uses aggressive structural rewriting (extracting action/tool/outcome) to rebuild bullets from scratch without fabricating experience. Includes a side-by-side "Before & After" diff viewer.
+*   **👑 Intelligent God Mode Titles**: Dynamically bridges the gap between your real past job titles and the target JD title, maximizing ATS relevance while remaining truthful.
+*   **🛡️ Strict Project Preservation**: Never lose your hard-earned technical details. The AI is strictly constrained to preserve original impact metrics and prevent generic one-line summaries.
 *   **🎨 Multi-Template Exports**: Generate production-ready resumes instantly. Export to both **PDF** and **DOCX** formats using 5 distinct templates (Classic, Modern, Executive, Creative, and Tech).
-*   **✉️ Cover Letter & Recruiter Emails**: Instantly generate targeted cover letters and highly-optimized "cold emails" for recruiters with a clear "foot-in-the-door" ask.
+*   **✉️ Cover Letter (PDF) & Recruiter Emails**: Instantly generate targeted cover letters (now downloadable as beautifully formatted PDFs) and highly-optimized "cold emails" for recruiters with concrete, professional next steps.
 *   **💡 Project Suggestions**: Lacking experience? The AI acts as a Senior Tech Lead to suggest 3 highly relevant side projects (including tech stacks and strategic reasoning) to bridge the gap.
 *   **🎯 Interview Prep**: Prepare for the battle. Generates behavioral, technical, and situational interview questions based specifically on your newly optimized resume.
 *   **🎯 Seamless "Apply Now" Pipeline**: Auto-searched jobs track their original URL so you can instantly submit your optimized resume via the "Apply Now" button at the end.
