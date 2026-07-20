@@ -2,6 +2,9 @@
 logs
 *.log
 npm-debug.log*
+*-err.txt
+crash-*.txt
+gpu_diag.txt
 
 # Dependency directories
 node_modules/
@@ -20,6 +23,9 @@ out/
 # OS metadata
 .DS_Store
 Thumbs.db
+
+# Dev Tools Scratch
+dev-tools/scratch/
 
 # Python scraper build output
 bin/

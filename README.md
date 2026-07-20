@@ -1,10 +1,18 @@
 # 🚀 Raunak's ResRescue (ATS Resume Optimizer) v1.8.3
 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Build Status](https://img.shields.io/github/actions/workflow/status/raunakpatil/Resrescue-ats-resume-optimizer/ci.yml)
+![Version](https://img.shields.io/github/package-json/v/raunakpatil/Resrescue-ats-resume-optimizer)
+![Node Version](https://img.shields.io/badge/node-18%2B-brightgreen.svg)
 Welcome to **Raunak's ResRescue**, a next-generation desktop application designed to beat Applicant Tracking Systems (ATS) and help you land interviews. Built with a stunning liquid-glass user interface, this tool leverages the power of the Google Gemini API to analyze, restructure, and supercharge your resume against any target Job Description (JD).
 
 ![Raunak's ResRescue UI](src/assets/wide-logo.png)
 
 ## 📸 Application Showcase
+
+> [!TIP]
+> **Demo Video Coming Soon!** 
+> *Imagine a 15-second fluid GIF here showing the exact workflow from upload to optimized PDF download.*
 
 Experience the seamless 5-step optimization workflow wrapped in a liquid-glass aesthetic:
 
@@ -100,9 +108,18 @@ ResRescue is built around Apple's latest Human Interface Design principles, spec
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are always welcome! Feel free to check the issues page or submit a Pull Request.
+Contributions, issues, and feature requests are always welcome! Feel free to check the issues page or submit a Pull Request. Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
-## 🙏 Acknowledgements
+## 🧪 Testing
+Automated testing is currently being developed. We plan to introduce a testing framework (e.g., Vitest) to run unit tests against our core AI evaluation logic (`atsScorer.js` and `gapAnalyzer.js`) to ensure PDF parsing and scoring remains robust and trustworthy.
+
+## ⚠️ Troubleshooting & Known Issues
+
+If you run into issues, here are a few common gotchas:
+*   **Image-based PDFs**: This tool uses `pdf-parse` to read text. Scanned resumes or image-based PDFs cannot be parsed. Please upload text-searchable PDFs.
+*   **Electron Packaging / GPU Errors**: If you encounter `gpu_diag` errors or unpack issues during `npm run electron:build`, ensure you have the latest version of Node installed, and verify that `electron-builder` has permissions to write to your `release/` directory.
+*   **Gemini Rate Limits**: The free tier of the Google Gemini API has rate limits. If the app stalls on Step 4, wait a minute and try again.
+*   **OS Compatibility**: While `package.json` uses `--win` for `electron-builder` by default to create a `.exe`, this application is built on web technologies and is fully **cross-platform compatible** for Mac and Linux. You simply need to adjust the `electron-builder` target arguments.
 
 A special thanks to [Mekhala Saxena](https://github.com/MekhalaSaxena97) for her extensive Testing and Quality Assurance!
 
